@@ -97,14 +97,14 @@ a{
     border-radius: 0px;
 }
 
-.header_img p{
+.header_img p {
     flex: 1;
     width: 50%;
-    height: 50%;
     overflow: hidden;
-    white-space: wrap; /*文字列を折り返す*/
+    white-space: normal;
     padding: 10px;
-    font-size: 40px;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
 /* ホームの概要のスタイル */
