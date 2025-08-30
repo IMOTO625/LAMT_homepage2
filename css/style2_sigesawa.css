@@ -1,0 +1,459 @@
+@charset "UTF-8";
+
+body{
+    font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif; /*フォントに優先順位をつける*/
+    font-size: 15px;
+    /* border-top: 10px solid #494d71; 上部に黒い線を引く */
+    /* background-color: #eeffff; */
+    /* background-image: url(../img/snow2.jpg); */
+    background-color: rgb(255, 255, 255);
+    /* background-color: #f0faff; */
+    background-size: cover;
+    background-attachment: fixed; /*背景画像を固定する*/
+}
+
+a{
+    text-decoration: none; /*リンクの下線を消す*/
+    color: #333; /*リンクの色を指定*/
+}
+
+.logo{
+    text-align: center;
+    /* margin-top: 40px;
+    margin-bottom: 30px; */
+    margin-left: 10%;
+    /* background-color: rgb(16, 210, 145); */
+}
+
+.logo img{
+    display: inline-block;
+    height: 60px;
+    width: auto;
+}
+
+.nav{
+    /* margin-top: 30px; */
+    /* margin-bottom: 30px; */
+    margin-right: 10%;
+    /* background-color: aquamarine; */
+}
+
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav ul li{
+    text-align: center;
+    /* margin-left: 20px; */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* .nav ul li a:hover{
+    color: #4400ff;
+} */
+
+.header{
+    /* position: fixed;     */
+    height: 80px; 
+    top: 0;   
+    width: 100%;
+    display: flex; /*横並びにする */
+    justify-content: space-between; /*横方向に間を設けて並べる */
+    align-items: center; /*垂直方向の中央揃え*/
+    /* margin-left: 10%;
+    margin-right: 10%; */
+    padding: 20px 0;
+    background-color: #ffffff;
+}
+
+.bg_1 {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.bg_2 {
+    width: 100%;    
+    background-color: #f8f8f8;
+}
+
+.header_img {
+    /* margin-top: 80px; */
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    /* background-image: url(../img/road.jpg);
+    background-size: cover;
+    background-position: -500px center;     */
+}
+
+.header_img img{
+    /* flex: 1; */
+    width: 50%;
+    height: 50%;
+    border-radius: 0px;
+}
+
+.header_img p{
+    flex: 1;
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+    white-space: wrap; /*文字列を折り返す*/
+    padding: 10px;
+    font-size: 40px;
+}
+
+/* ホームの概要のスタイル */
+.about {
+    text-align: center;
+    width: 50%;
+    margin: 2% auto;
+    padding: 20px;
+}
+
+.about h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.about p{
+    margin-top: 2%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* ホームのカレンダーのスタイル */
+.calendar {
+    width: 80%;
+    height: auto;
+    margin: 2% auto;
+    padding: 20px;
+}
+
+.calendar h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;  
+}
+
+.calendar iframe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    width: 80%;
+    height: 600px;
+}
+
+/* --------------------------------------- */
+/* ブログ全体のスタイル */
+.blog {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+}
+
+.blog_home {
+    width: 80%;
+    margin: 2% auto;
+    padding: 20px;
+}
+
+.blog_home h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* 各記事のスタイル */
+.blog section {
+    /* margin-top: 100px; */
+    width: 80%;
+}
+
+.blog_home section {
+    display: flex;
+    justify-content: space-between;
+}
+.blog article {
+    display: flex;
+    flex-direction: row; /* 画像を左、文章を右に並べる */
+    margin-bottom: 20px;
+    padding: 20px;
+    border-top: 2.3px solid #00000077; /*各記事の区切り */
+    /* background-color: antiquewhite; */
+}
+
+.blog_home article {
+    white-space: nowrap;
+    display: flex;
+    /* flex-direction: row; 画像を左、文章を右に並べる */
+    /* margin-bottom: 20px; */
+    padding: 20px;
+    /* border-bottom: 1px solid #ddd; 各記事の区切り */
+    align-items: center;
+}
+
+/* 画像のスタイル */
+.blog-image {
+    max-width: 300px;
+    height: 200px;
+    /* border-radius: 20px; */
+    margin-right: 2%;
+    /* filter: grayscale(100%); */
+}
+
+.blog-image_home {
+    max-width: 150px;
+    height: 100px;
+    /* border-radius: 20px; */
+    margin-right: 2%;
+    /* filter: grayscale(100%); */
+}
+
+/* 「続きを読む」ボタンのスタイル */
+.read-more {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+.read-more:hover {
+    background-color: #ffffff;
+}
+
+.close {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+}
+
+/* 記事内容のスタイル */
+.blog_text {
+    flex: 1;  /*文章部分を残りのスペースで広げる */
+}
+
+/* タイトルのスタイル */
+.blog_text h2 {
+    font-size: 2.0em;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.blog_text_home h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    /* font-weight: bold; */
+}
+
+/* 記事の内容のスタイル */
+.blog_text p {
+    font-size: 1.3em;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 投稿日時のスタイル */
+.blog_text p small {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.info {
+    display: flex;
+    justify-content: right;
+}
+
+.info p {
+    margin-right: 10px;
+}
+
+.year_button{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    width: 10em;
+    height: 3em;
+}
+
+.organize {
+    width: 20%;
+    /* background-color: #d44cb2; */
+    text-align: right;
+    padding: 20px;
+}
+
+.organize li {
+    font-size: 20px;
+    /* font-weight: bold; */
+}
+
+.organize h1 {
+    font-size: 30px;
+    margin-bottom: 2%;
+}
+
+ /* フッター */
+ footer {
+    width: 100%; /* 横幅いっぱいに設定 */
+    background-color: #000; /* ギャラリー部分の背景色 */
+    padding: 20px 0; /* 上下の余白を確保 */
+}
+
+footer .logo_address {
+    display: flex; /* 横並びにする */
+    flex-wrap: wrap; /* 子要素を折り返す */
+    justify-content: space-between; /* 左詰めに配置 */
+    gap: 20px; /* 要素間のスペース */
+    margin: 0 auto; /* 中央揃え */
+    max-width: 1200px; /* 最大幅を設定 */
+    padding: 10px; /* 内側に余白 */
+}
+
+footer .logo_footer {
+    flex-shrink: 0; /* ロゴのサイズを固定 */
+}
+
+footer .logo_footer img {
+    max-height: 50px; /* ロゴの高さを適宜調整 */
+}
+
+footer .address p {
+    margin: 10px 0; /* 上下に適度なスペース */
+    color: #ffffff;
+    font-size: 14px;
+    text-align: right;
+}
+
+footer .copyright p {
+    margin: 10px 0;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/* ドロップダウンメニュー */
+.menu {
+    display: inline-block;
+    /* margin: 0 auto; */
+    list-style-type: none;
+  
+    a {
+      display: block;
+      margin: 0;
+      padding: 16px 25px;
+      color: #333;
+       text-decoration: none;
+       background-color: #fff;
+    }
+    li {
+      position: relative;
+      float: left;
+      margin: 0;
+      /* border-left: 1px solid #eee; */
+      perspective: 200;
+  
+      /* &:first-child {
+        border-left: none;
+      } */
+      &.parent {
+        &:before {
+          content: '';
+          z-index: 200;
+          position: absolute;
+          /* top: 100%;
+          left: 50%; */
+          /* margin-top: -4px;
+          margin-left: -20px; */
+          display: block;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          /* border-width: 8px 20px 0 20px; */
+          border-color: #fff transparent transparent transparent;
+          transition: margin-top .1s ease-out;
+        }
+      }
+      &:hover,
+      &:focus {
+        & > a {
+          text-decoration: none;
+          color: #fff;
+          background-color: #4400ff;
+        }
+        &:before {
+          margin-top: 0;
+          border-top-color: #4400ff;
+        }
+        .children {
+          opacity: 1;
+          transform: rotateX(0) translateZ(0);
+        }
+      }
+    }
+    .children {
+      display: flex;
+      flex-direction: column;
+      opacity: 0;
+      backface-visibility: hidden;
+      /* transform: rotateX(-90deg); */
+      transform: rotateY(-90deg);
+      transform-style: preserve-3d;
+      transform-origin: top center;
+      transition: transform .4s cubic-bezier(.17,.67,.59,1.21), opacity .1s .1s;
+  
+      z-index: 100;
+       list-style-type: none;
+      position: absolute;
+      top: 100%;
+      left: 0%;
+      white-space: nowrap;
+      margin: 0;
+      /* padding: 10px 0; */
+      background-color: #fff;
+      box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+       text-align: left;
+  
+      li {
+        float: none;
+      }
+      a {
+        background-color: transparent;
+  
+        &:hover,
+        &:focus {
+          color: #ffffff;
+          background-color: #4400ff;
+        }
+      }
+    }
+  }
+  
+  .clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
