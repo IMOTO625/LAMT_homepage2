@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>先端モビリティ工学研究室</title> <!--サイトのタイトル-->
+    <meta name="discription" content="先端モビリティ工学研究室のホームページ"> <!--サイトの説明文-->
+    <link rel="stylesheet" href="css/reset.css"> <!--reset cssはブラウザごとに異なるデフォルトのCSSをリセットし、統一する。最初に読み込む-->
+    <link rel="stylesheet" href="css/style2_sigesawa.css"> <!--cssファイルの読み込み-->
+    <link rel="icon" href="img/logotxt.svg" type="image/x-icon"> <!--タブアイコン（ファビコン）の設定-->
+</head>
+<body>
+    <div class="bg_1">
+        <div class="header"> <!--デザインを俯瞰してどうdiv分割するかを考えるとよい-->
+            <div class="logo"> <!--ロゴクラスを作ることで、ロゴクラスに対してcssを適用できる-->
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="研究室の写真"> <!--画像-->
+                </a>
+            </div>
+            <div class="nav"> <!--ナビゲーション-->
+                <ul class="menu clearfix">
+                    <li class="parent">
+                        <a href="index.html">ホーム</a>
+                        <ul class="children">
+                            <li><a href="#about">当研究室について</a></li>
+                            <li><a href="#blog_small">新着のブログ</a></li>
+                            <li><a href="#calen">今後の予定</a></li>
+                        </ul>
+                    </li>
+                    <li class="parent">
+                        <a href="introduction.html">研究室紹介</a>
+                        <ul class="children">
+                            <li><a href="#setubi">設備紹介</a></li>
+                            <li><a href="#member">メンバー紹介</a></li>
+                            <li><a href="#gazou">ギャラリー</a></li>
+                        </ul>
+                    </li>
+                    <li class="parent">
+                        <a href="research.html">研究紹介</a>
+                        <ul class="children">
+                            <li><a href="#gyouseki">研究業績</a></li>
+                            <li><a href="#shoukai">研究紹介</a></li>
+                            
+                        </ul>
+                    </li>                
+                    <li class="parent">
+                        <a href="blog2.html">ブログ</a>
+                    </li>
+                    <li class="parent">
+                        <a href="sotomuke.html">連絡先・配属前の学生へ</a>
+                        <ul class="children">
+                            <li><a href="#先生から一言">教員より</a></li>
+                            <li><a href="#学生から一言">学生より</a></li>
+                            <li><a href="#住所・連絡先">コンタクト</a></li>
+                            <li><a href="#進路">進路情報</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="bg_2">
+        <div class="blog">
+            <section>
+                {% for post in posts %}
+                <article>
+                    <img class="blog-image" src="{{ post.image }}" alt="記事画像">
+                    <div class="blog_text">
+                        <h2>{{ post.title }}</h2>
+                        <p class="preview">{{ post.content[:150] }}...</p>  <!-- 最初の150文字を表示 -->
+                        <p class="full-content" style="display: none;">{{ post.content }}</p>  <!-- 完全な記事内容 -->
+                        <button class="read-more">続きを読む</button>
+                        <button class="close" style="display: none;">折りたたむ</button>
+                        <div class="info">
+                            <p><small>投稿者: {{ post.author }}</small></p>
+                            <p><small>投稿日時: {{ post.timestamp }}</small></p>
+                        </div>
+                    </div>
+                </article>
+                {% endfor %}
+            </section>
+            <div class="organize">
+                <h1>年別ブログ</h1>
+                <ol>
+                    <li><a>2024</a></li>
+                    <li><a>2023</a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <script src="javascript/script_sigesawa.js"></script> <!--javascriptファイルの読み込み-->
+</body>
+<footer>
+    <div class="logo_address">
+        <div class="logo_footer">
+            <img src="img/logo_white.svg" alt="ロゴ"> 
+        </div>
+        <div class="address">
+            <p>〒060-0810　札幌市北区北１０条西８丁目</p>
+            <p>北海道大学大学院　理学研究院化学部門 　理学部7号館304号室</p>
+            <p>Tell：011-706-4665</p>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @Laboratry of Advanced Mobility and Transportation Engineering. All Rights Reserved</p>
+    </div>
+</footer> 
+</html>

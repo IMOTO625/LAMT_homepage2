@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>研究紹介 | 先端モビリティ工学研究室</title>
+    <meta name="description" content="研究紹介｜先端モビリティ工学研究室のホームページ">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logotxt.svg" type="image/x-icon">
+</head>
+<body>
+    <div class="bg_1">
+        <div class="header"> <!--デザインを俯瞰してどうdiv分割するかを考えるとよい-->
+            <div class="logo"> <!--ロゴクラスを作ることで、ロゴクラスに対してcssを適用できる-->
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="研究室の写真"> <!--画像-->
+                </a>
+            </div>
+            <div class="nav"> <!--ナビゲーション-->
+                <ul class="menu clearfix">
+                    <li class="parent">
+                        <a href="index.html">ホーム</a>
+                        <ul class="children">
+                            <li><a href="#about">当研究室について</a></li>
+                            <li><a href="#blog_small">新着のブログ</a></li>
+                            <li><a href="#calen">今後の予定</a></li>
+                        </ul>
+                    </li>
+                    <li class="parent">
+                        <a href="introduction.html">研究室紹介</a>
+                        <ul class="children">
+                            <li><a href="#setubi">設備紹介</a></li>
+                            <li><a href="#member">メンバー紹介</a></li>
+                            <li><a href="#gazou">ギャラリー</a></li>
+                        </ul>
+                    </li>
+                    <li class="parent">
+                        <a href="research.html">研究紹介</a>
+                        <ul class="children">
+                            <li><a href="#gyouseki">研究業績</a></li>
+                            <li><a href="#shoukai">研究紹介</a></li>
+                            
+                        </ul>
+                    </li>                
+                    <li class="parent">
+                        <a href="blog2.html">ブログ</a>
+                    </li>
+                    <li class="parent">
+                        <a href="sotomuke.html">連絡先・配属前の学生へ</a>
+                        <ul class="children">
+                            <li><a href="#先生から一言">教員より</a></li>
+                            <li><a href="#学生から一言">学生より</a></li>
+                            <li><a href="#住所・連絡先">コンタクト</a></li>
+                            <li><a href="#進路">進路情報</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="gyouseki" class="container_title">
+        <h2>研究業績</h2>
+        <section id="publications">
+            
+        
+            <div id="awards">
+                <h3>論文誌</h3>
+                <ul>
+                    <li>・Yuki Nakamura, Toru Hagiwara, Yasuhiro Nagata, Sho　Takahashi</li>
+                    <li>　Development of Poor Visibility Assessment Method in Winter Using Images Taken by On-Board Video Camera</li>
+                    <li>　Journal of EASTS, 2021. (Accepted)</li>
+                    <li>・Shuhei Wada, Sho　Takahashi, Tomonori Ohiro, Kazunori Munehiro, Minoru Okada, Toru Hagiwara</li>
+                    <li>　Effects of Time-Gap Settings of Adaptive Cruise Control (ACC) on Driver’s Risk Feeling Estimated by the Car-Following Situation</li>
+                    <li>　Journal of EASTS, 2021. (Accepted)</li>
+                    <li>・Tomoki Haruyama, Sho　Takahashi, Takahiro Ogawa, Miki Haseyama</li>
+                    <li>　User-selectable Event Summarization in Unedited Raw Soccer Video via Multimodal Bidirectional LSTM</li>
+                    <li>　ITE Transactions on Media Technology and Applications, vol. 9, no. 1, pp. 42-53, 2021.</li>
+                    <li>　https://doi.org/10.3169/mta.9.42</li>
+                    <li>・八木雅大, 高橋翔, 萩原亨</li>
+                    <li>　自転車の回避行動に関するデータ集積のためのエッジコンピューティングシステムの構築</li>
+                    <li>　土木学会論文誌 D3（土木計画学）, vol. 76, no. 5, pp. I_859-I_867, 2021.</li>
+                    <li>　https://doi.org/10.2208/jscejipm.76.5_I_859</li>
+                </ul>
+            </div>
+            
+            <div id="journals">
+                <h3>学会</h3>
+                <ul>
+                    <li>Title</li>
+                    <li>Title</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- 以下編集すればタグボタン追加できる -->
+    <div class="container">
+
+        <div id="shoukai" class="container_research">
+            <h2>研究紹介</h2>
+            
+        </div>
+
+        <div class="year_button">
+            <button data-year="2024" class="filter-btn">2024</button>
+            <button data-year="2023" class="filter-btn">2023</button>
+            <button data-year="2022" class="filter-btn">2022</button>
+            <button class="filter-btn show-all">すべて表示</button>
+        </div>
+        <div class="category_button">
+            <button data-category="画像解析" class="filter-btn">画像解析</button>
+            <button data-category="冬期路面" class="filter-btn">冬期路面</button>
+            <button data-category="エネルギー" class="filter-btn">エネルギー</button>
+        </div>
+
+        <div class="box_list" id="research-container"></div>
+
+    </div>
+
+    <footer>
+        <div class="logo_address">
+            <div class="logo_footer">
+                <img src="img/logo_white.svg" alt="ロゴ"> 
+            </div>
+            <div class="address">
+                <p>〒060-0810　札幌市北区北１０条西８丁目</p>
+                <p>北海道大学大学院　理学研究院化学部門 　理学部7号館304号室</p>
+                <p>Tell：011-706-4665</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @Laboratry of Advanced Mobility and Transportation Engineering. All Rights Reserved</p>
+        </div>
+    </footer> 
+
+
+    <script src="javascript/script2.js"></script>
+</body>
+</html>
