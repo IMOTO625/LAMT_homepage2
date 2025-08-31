@@ -38,9 +38,12 @@ a{
     /* background-color: aquamarine; */
 }
 
-.nav ul{
+.nav ul {
     display: flex;
-    justify-content: space-between;
+    gap: 30px; /* Home と Member の間隔を均等に */
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .nav ul li{
@@ -82,6 +85,7 @@ a{
     /* margin-top: 80px; */
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 40px; /* フッターとの間に余白を追加 */
     display: flex;
     justify-content: space-between; 
     align-items: center;
@@ -469,6 +473,7 @@ a{
  /* フッター */
  footer {
     width: 100%; /* 横幅いっぱいに設定 */
+    margin-top: 20px; /* 念のためフッターの上にも余白を追加 */
     background-color: #000; /* ギャラリー部分の背景色 */
     padding: 20px 0; /* 上下の余白を確保 */
 }
@@ -568,3 +573,4 @@ footer .copyright p {
   display:block;
   clear:both;
 }
+
