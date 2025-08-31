@@ -312,6 +312,165 @@ a{
     margin-bottom: 2%;
 }
 
+.container_equipment {
+    width: 100%; /* 横幅いっぱいに設定 */
+    background-color: #f8f8f8; /* ギャラリー部分の背景色 */
+    padding: 20px 0; /* 上下の余白を確保 */
+}
+
+.equipment_wrapper {
+    display: flex; /* 横並びにする */
+    flex-wrap: wrap; /* 子要素を折り返す */
+    justify-content: space-between; /* 子要素を均等配置 */
+    gap: 20px; /* 要素間のスペース */
+    margin: 0 auto; /* 中央揃え */
+    max-width: 1200px; /* 最大幅を設定 */
+    padding: 10px; /* 内側に余白 */
+}
+
+.container_equipment h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* 子要素 */
+.equipment {
+    width: calc(33.33% - 20px); /* 1行に3つ並ぶ幅を指定 */
+    box-sizing: border-box; /* パディングやボーダーを含めた幅計算 */
+    margin: 0; /* 外側の余白はgapで調整 */
+    display: flex; /* 子要素内のレイアウト用 */
+    flex-direction: column; /* 子要素を縦に並べる */
+    align-items: center; /* 子要素を中央揃え */
+}
+
+/* equipment内部のimg */
+.equipment img {
+    width: 100%; /* 親要素の幅に合わせる */
+    height: auto; /* アスペクト比を維持 */
+    object-fit: cover; /* 画像を適切に表示 */
+}
+
+/* equipment内部のh1とp */
+.equipment h1{
+    margin: 10px 0; /* 上下に適度なスペース */
+    text-align: left; /* テキストを中央揃え */
+    font-weight: bold;
+}
+.equipment p {
+    margin: 10px 0; /* 上下に適度なスペース */
+    text-align: left; /* テキストを中央揃え */
+}
+
+
+
+
+
+
+
+
+
+.container_member {
+    width: 100%; /* 横幅いっぱいに設定 */
+    background-color: #ffffff; /* ギャラリー部分の背景色 */
+    padding: 20px 0; /* 上下の余白を確保 */
+}
+
+.container_member h3 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+}
+
+.teachers, .students {
+    flex-wrap: wrap; /* 子要素を折り返す */
+    justify-content: flex-start; /* 左詰めに配置 */
+    gap: 20px; /* 要素間のスペース */
+    margin: 0 auto; /* 中央揃え */
+    max-width: 1200px; /* 最大幅を設定 */
+    padding: 10px; /* 内側に余白 */
+}
+
+.teachers h2, .students h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    text-align: left;
+}
+
+.teacher_wrapper, .student_wrapper {
+    display: flex; /* 横並びにする */
+    flex-wrap: wrap; /* 子要素を折り返す */
+    justify-content: flex-start; /* 左詰めに配置 */
+    gap: 20px; /* 要素間のスペース */
+    margin: 0 auto; /* 中央揃え */
+    max-width: 1200px; /* 最大幅を設定 */
+    padding: 10px; /* 内側に余白 */
+}
+
+.member {
+    flex: 0 0 calc(16.66% - 20px); /* 1行に6つ並ぶ幅を指定 */
+    box-sizing: border-box; /* パディングやボーダーを含めた幅計算 */
+    margin: 0; /* 外側の余白はgapで調整 */
+    display: flex; /* 子要素内のレイアウト用 */
+    flex-direction: column; /* 子要素を縦に並べる */
+    align-items: left; 
+}
+
+/* equipment内部のimg */
+.member img {
+    width: 100%; /* 親要素の幅に合わせる */
+    height: 100%; /* 幅と同じ高さにする */
+    object-fit: cover; /* 画像を適切にトリミング */
+    aspect-ratio: 1 / 1; /* アスペクト比を正方形に設定 */
+}
+
+/* equipment内部のh1とp */
+.member h1 {
+    margin: 10px 0; /* 上下に適度なスペース */
+    text-align: left; /* テキストを中央揃え */
+    font-weight: bold;
+}
+.member p {
+    margin: 10px 0; /* 上下に適度なスペース */
+    text-align: left;
+}
+.member_content a {
+    color: blue;
+}
+
+
+
+
+
+
+.gallery {
+    width: 100%; /* 横幅いっぱいに設定 */
+    background-color: #f8f8f8; /* ギャラリー部分の背景色 */
+    padding: 50px 0; /* 上下の余白を確保 */
+}
+.gallery h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+}
+.swiper {
+    width: 100%; /* 横幅いっぱいに設定 */
+    padding: 10px 0; /* 上下の余白を確保 */
+    max-width: 1200px; /* 最大幅を設定 */
+}
+
+.swiper-slide img {
+    width: 80%; /* 親要素の幅に合わせる */
+    height: 100%; /* 幅と同じ高さにする */
+    object-fit: cover; /* 画像を適切にトリミング */
+    aspect-ratio: 1 / 1; /* アスペクト比を正方形に設定 */
+    padding: 30px;
+}
+
  /* フッター */
  footer {
     width: 100%; /* 横幅いっぱいに設定 */
@@ -457,3 +616,4 @@ footer .copyright p {
     clear: both;
     height: 0;
   }
+
