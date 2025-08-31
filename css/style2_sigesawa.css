@@ -47,6 +47,12 @@ a{
   padding: 0;
 }
 
+.nav ul li {
+  box-shadow: none !important;
+  outline: none !important;
+  background: none !important;
+}
+
 /* ボタンの基本スタイル（青で塗りつぶし） */
 .nav ul li a{
   display: block;
@@ -95,6 +101,11 @@ a{
 }
 
 .nav ul li a:active{
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.nav ul li a:focus-visible {
   box-shadow: none !important;
   outline: none !important;
 }
@@ -648,10 +659,9 @@ footer .copyright p {
   margin:0;
   padding:0;
 }
-.menu > li{
-  position:relative;
-  float:left;
-  margin:0;
+.menu > li {
+  box-shadow: none !important;
+  outline: none !important;
 }
 .menu > li > a{
   display:block;
@@ -703,6 +713,7 @@ footer .copyright p {
   display:block;
   clear:both;
 }
+
 
 
 
