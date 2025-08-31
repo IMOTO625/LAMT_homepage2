@@ -111,6 +111,19 @@ a{
     line-height: 1.6;
 }
 
+.header_img .text-block {
+    flex: 1;
+    width: 50%;
+    text-align: center;   /* 中央寄せ */
+    padding: 20px;
+    font-size: 1rem;
+    line-height: 1.8;
+    display: flex;            /* 縦方向中央寄せ */
+    flex-direction: column;
+    justify-content: center;  /* 高さの中央 */
+    align-items: center;      /* 横の中央 */
+}
+
 /* ホームの概要のスタイル */
 .about {
     text-align: center;
@@ -578,3 +591,4 @@ footer .copyright p {
   display:block;
   clear:both;
 }
+
