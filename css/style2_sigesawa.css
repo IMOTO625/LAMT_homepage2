@@ -75,6 +75,11 @@ a{
   border-left: none;
 }
 
+.nav ul li a {
+  box-shadow: none !important;   /* 影を消す */
+  outline: none !important;      /* 青いフォーカス枠を消す */
+}
+
 /* ホバー時の色 */
 .nav ul li a:hover{
   background: #3a00d6;    /* 少しだけ濃く */
@@ -85,8 +90,13 @@ a{
 
 /* フォーカス時も影やアウトラインを消す（ブラウザ既定の青枠対策） */
 .nav ul li a:focus{
-  box-shadow: none;
-  outline: none;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.nav ul li a:active{
+  box-shadow: none !important;
+  outline: none !important;
 }
 
 .header{
