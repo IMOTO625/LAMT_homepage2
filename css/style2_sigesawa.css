@@ -441,11 +441,6 @@ a{
     color: blue;
 }
 
-
-
-
-
-
 .gallery {
     width: 100%; /* 横幅いっぱいに設定 */
     background-color: #f8f8f8; /* ギャラリー部分の背景色 */
@@ -512,108 +507,64 @@ footer .copyright p {
 
 
 /* ドロップダウンメニュー */
-.menu {
-    display: inline-block;
-    /* margin: 0 auto; */
-    list-style-type: none;
-  
-    a {
-      display: block;
-      margin: 0;
-      padding: 16px 25px;
-      color: #333;
-       text-decoration: none;
-       background-color: #fff;
-    }
-    li {
-      position: relative;
-      float: left;
-      margin: 0;
-      /* border-left: 1px solid #eee; */
-      perspective: 200;
-  
-      /* &:first-child {
-        border-left: none;
-      } */
-      &.parent {
-        &:before {
-          content: '';
-          z-index: 200;
-          position: absolute;
-          /* top: 100%;
-          left: 50%; */
-          /* margin-top: -4px;
-          margin-left: -20px; */
-          display: block;
-          width: 0;
-          height: 0;
-          border-style: solid;
-          /* border-width: 8px 20px 0 20px; */
-          border-color: #fff transparent transparent transparent;
-          transition: margin-top .1s ease-out;
-        }
-      }
-      &:hover,
-      &:focus {
-        & > a {
-          text-decoration: none;
-          color: #fff;
-          background-color: #4400ff;
-        }
-        &:before {
-          margin-top: 0;
-          border-top-color: #4400ff;
-        }
-        .children {
-          opacity: 1;
-          transform: rotateX(0) translateZ(0);
-        }
-      }
-    }
-    .children {
-      display: flex;
-      flex-direction: column;
-      opacity: 0;
-      backface-visibility: hidden;
-      /* transform: rotateX(-90deg); */
-      transform: rotateY(-90deg);
-      transform-style: preserve-3d;
-      transform-origin: top center;
-      transition: transform .4s cubic-bezier(.17,.67,.59,1.21), opacity .1s .1s;
-  
-      z-index: 100;
-       list-style-type: none;
-      position: absolute;
-      top: 100%;
-      left: 0%;
-      white-space: nowrap;
-      margin: 0;
-      /* padding: 10px 0; */
-      background-color: #fff;
-      box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
-       text-align: left;
-  
-      li {
-        float: none;
-      }
-      a {
-        background-color: transparent;
-  
-        &:hover,
-        &:focus {
-          color: #ffffff;
-          background-color: #4400ff;
-        }
-      }
-    }
-  }
-  
-  .clearfix:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
-  }
+.menu{
+  display:inline-block;
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+.menu > li{
+  position:relative;
+  float:left;
+  margin:0;
+}
+.menu > li > a{
+  display:block;
+  padding:16px 25px;
+  color:#333;
+  text-decoration:none;
+  background:#fff;
+}
+.menu > li:hover > a,
+.menu > li:focus-within > a{
+  color:#fff;
+  background:#4400ff;
+}
+.menu .children{
+  position:absolute;
+  top:100%;
+  left:0;
+  list-style:none;
+  margin:0;
+  padding:8px 0;
+  background:#fff;
+  box-shadow:0 2px 3px rgba(0,0,0,.1);
+  display:none;
+  min-width:180px;
+  z-index:100;
+}
+.menu > li:hover .children,
+.menu > li:focus-within .children{
+  display:block;
+}
+.menu .children li{ float:none; }
+.menu .children a{
+  display:block;
+  padding:10px 16px;
+  color:#333;
+  background:transparent;
+  text-decoration:none;
+  white-space:nowrap;
+}
+.menu .children a:hover,
+.menu .children a:focus{
+  color:#fff;
+  background:#4400ff;
+}
 
+/* clearfix */
+.clearfix::after{
+  content:"";
+  display:block;
+  clear:both;
+}
