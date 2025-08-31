@@ -31,61 +31,62 @@ a{
     width: auto;
 }
 
+/* ======= Header ナビの見た目と位置を調整 ======= */
+
+/* 右寄せしたいので .nav の右マージンを小さく（または 0） */
 .nav{
-    /* margin-top: 30px; */
-    /* margin-bottom: 30px; */
-    margin-right: 10%;
-    /* background-color: aquamarine; */
+  margin-right: 2%;      /* ←もっと右へ寄せたいなら 0～2% に */
 }
 
-.nav ul {
-    display: flex;
-    gap: 30px; /* Home と Member の間隔を均等に */
-    list-style: none;
-    margin: 0;
-    padding: 0;
+/* 横並び：スキマ無しにする */
+.nav ul{
+  display: flex;
+  gap: 0;                /* ←ここを 0 に */
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.nav ul li{
-    text-align: center;
-    /* margin-left: 20px; */
-    font-size: 20px;
-    font-weight: bold;
+/* ボタンの基本スタイル（青で塗りつぶし） */
+.nav ul li a{
+  display: block;
+  padding: 12px 28px;
+  background: #4400ff;         /* ←青で塗りつぶし */
+  color: #fff;                  /* 文字は白 */
+  border: 1px solid #4400ff;    /* 枠線も同色に */
+  border-radius: 0;             /* 角丸は下で個別に付与 */
+  margin: 0;
+  text-decoration: none;
+  line-height: 1;
 }
 
-.nav ul li a {
-    display: block;
-    padding: 10px 20px;
-    border: 1px solid #ccc;   /* 枠線 */
-    border-radius: 0;         /* 角を丸めない */
-    margin: 0;                /* ←隙間をなくす */
-    text-decoration: none;
-    color: #333;
+/* 角丸：左右端だけ */
+.nav ul li:first-child a{
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.nav ul li:last-child a{
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 
-/* 左端のリンクのみに左角を丸める */
-.nav ul li:first-child a {
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
+/* 隣り合う境界の“二重線”を消す（左側の境界を重ねて無くす） */
+.nav ul li + li a{
+  border-left: none;
 }
 
-/* 右端のリンクのみに右角を丸める */
-.nav ul li:last-child a {
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
+/* ホバー時の色 */
+.nav ul li a:hover{
+  background: #3a00d6;    /* 少しだけ濃く */
+  border-color: #3a00d6;
+  box-shadow: none;
+  outline: none;
 }
 
-/* マウスオーバー */
-.nav ul li a:hover {
-    background-color: #f5f5f5; /* 背景色だけ変える */
-    border-color: #999;        /* 枠線だけ変える */
-    box-shadow: none;          /* ←影を消す */
-    outline: none;             /* ←アウトラインを消す */
-}
-
-.nav ul li a:focus {
-    box-shadow: none;
-    outline: none;
+/* フォーカス時も影やアウトラインを消す（ブラウザ既定の青枠対策） */
+.nav ul li a:focus{
+  box-shadow: none;
+  outline: none;
 }
 
 .header{
@@ -692,6 +693,7 @@ footer .copyright p {
   display:block;
   clear:both;
 }
+
 
 
 
