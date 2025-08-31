@@ -124,6 +124,76 @@ a{
     align-items: center;      /* 横の中央 */
 }
 
+.hero{
+  /* コンテンツ幅を固定しつつ中央寄せ */
+  max-width: 1200px;
+  margin: 40px auto 64px;
+  padding: 0 24px;
+
+  /* PCでは左右2カラム、比率は画像 > テキスト */
+  display: grid;
+  grid-template-columns: minmax(480px, 1.2fr) minmax(380px, 1fr);
+  gap: 48px;
+}
+
+/* 画像：比率を保ってはみ出さない */
+.hero__image{ align-self: center; }
+.hero__image img{
+  width: 100%;
+  height: auto;            /* 画像が歪まない */
+  object-fit: cover;       /* はみ出し対策（必要十分） */
+  border-radius: 2px;
+}
+
+/* 右カラム：中央揃え＆幅を制御して“左寄り”を解消 */
+.hero__text{
+  align-self: center;                     /* 縦方向中央 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;                    /* 横方向中央 */
+  gap: 20px;
+  width: clamp(320px, 38vw, 560px);       /* 列の最小/理想/最大幅 */
+  margin-inline: auto;                    /* 列自体も中央に */
+  text-align: left;                       /* 本文は左揃え */
+}
+
+/* 見出しは太字＆中央寄せ */
+.hero__title{
+  font-weight: 800;
+  font-size: clamp(20px, 2.2vw, 32px);
+  line-height: 1.35;
+  text-align: center;
+  margin: 0;
+}
+
+/* 本文の行間や読みやすさ */
+.hero__lead{
+  font-size: clamp(14px, 1.25vw, 18px);
+  line-height: 1.9;
+  margin: 0;
+}
+
+/* タブレット以下：縦並びに切替（“キモい”崩れを防止） */
+@media (max-width: 1024px){
+  .hero{
+    grid-template-columns: 1fr;     /* 1カラム */
+    gap: 28px;
+  }
+  .hero__text{
+    width: min(720px, 100%);        /* 横幅を広げすぎない */
+  }
+}
+
+/* スマホ：余白を詰める */
+@media (max-width: 600px){
+  .hero{
+    margin: 24px auto 48px;
+    padding: 0 16px;
+    gap: 20px;
+  }
+  .hero__lead{ line-height: 1.8; }
+}
+
 /* ホームの概要のスタイル */
 .about {
     text-align: center;
@@ -591,4 +661,5 @@ footer .copyright p {
   display:block;
   clear:both;
 }
+
 
