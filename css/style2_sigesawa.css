@@ -367,14 +367,19 @@ a{
     text-align: left; /* テキストを中央揃え */
 }
 
+.lab-intro{
+  flex: 1;               /* 右カラムを残り幅いっぱいに */
+  padding-left: 8px;     /* 左に少し余白を足す */
+}
 
+.lab-title{
+  margin: 0 0 12px;
+  font-size: 28px;
+  line-height: 1.4;
+  font-weight: 700 !important;  /* reset.css の上書き */
+}
 
-
-
-
-
-
-
+/* Member.htmlの設定 */
 .container_member {
     width: 100%; /* 横幅いっぱいに設定 */
     background-color: #ffffff; /* ギャラリー部分の背景色 */
@@ -573,4 +578,3 @@ footer .copyright p {
   display:block;
   clear:both;
 }
-
