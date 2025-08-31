@@ -68,7 +68,8 @@ a{
     /* margin-left: 10%;
     margin-right: 10%; */
     padding: 20px 0;
-    background-color: #ffffff;
+    background-color: rgba(200, 255, 240, 0.9);
+    backdrop-filter: blur(4px); /* ぼかし効果 (オプション) */
 }
 
 .bg_1 {
@@ -661,5 +662,6 @@ footer .copyright p {
   display:block;
   clear:both;
 }
+
 
 
