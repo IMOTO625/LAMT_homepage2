@@ -49,7 +49,7 @@ def generate_student_html(student):
                         </div>
                     </div>'''
 
-def generate_member_page(data, output_file='Member_generated.html'):
+def generate_member_page(data, output_file='Member.html'):
     """メンバーページのHTMLを生成"""
     
     # ヘッダー部分

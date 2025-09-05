@@ -1,3 +1,4 @@
+<!-- Generated from members.json on 2025-09-06 03:55:04 -->
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -13,107 +14,75 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="icon" href="img/logotxt.svg" type="image/x-icon">
     <script src="javascript/script_sigesawa.js?v=20250831"></script>
+    <style>
+        .student_item {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .student_content h3 {
+            margin: 0 0 5px 0;
+            color: #333;
+            font-size: 1.2em;
+        }
+        .grade {
+            margin: 0 0 10px 0;
+            color: #666;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        .comment {
+            margin: 0;
+            color: #555;
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+        .student_wrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .grade_section {
+            margin: 30px 0;
+        }
+        .grade_section h3 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
 <body>
     <div class="bg_1">
-        <div class="header"> <!--デザインを俯瞰してどうdiv分割するかを考えるとよい-->
-            <div class="logo"> <!--ロゴクラスを作ることで、ロゴクラスに対してcssを適用できる-->
+        <div class="header">
+            <div class="logo">
                 <a href="index.html">
-                    <img src="img/logo.svg" alt="研究室の写真"> <!--画像-->
+                    <img src="img/logo.svg" alt="研究室の写真">
                 </a>
             </div>
-            <div class="nav"> <!--ナビゲーション-->
+            <div class="nav">
                 <ul class="menu clearfix">
                     <li class="parent">
                         <a href="index.html">Home</a>
                         <ul class="children">
-                            <!-- <li><a href="#about">当研究室について</a></li> -->
-                            <!-- <li><a href="#blog_small">新着のブログ</a></li> -->
-                            <!-- <li><a href="#calen">今後の予定</a></li> -->
                         </ul>
                     </li>
                     <li class="parent">
                         <a href="Member.html">Member</a>
                         <ul class="children">
-                            <!-- <li><a href="#setubi">設備紹介</a></li> -->
-                            <!-- <li><a href="#member">メンバー紹介</a></li> -->
-                            <!-- <li><a href="#gazou">ギャラリー</a></li> -->
                         </ul>
                     </li>
-                    <!-- <li class="parent">
-                        <a href="research.html">研究紹介</a>
-                        <ul class="children">
-                            <li><a href="#gyouseki">研究業績</a></li>
-                            <li><a href="#shoukai">研究紹介</a></li>
-                            
-                        </ul>
-                    </li>                 -->
-                    <!-- <li class="parent">
-                        <a href="blog2.html">ブログ</a>
-                    </li> -->
-                    <!-- <li class="parent">
-                        <a href="sotomuke.html">連絡先・配属前の学生へ</a>
-                        <ul class="children">
-                            <li><a href="#先生から一言">教員より</a></li>
-                            <li><a href="#学生から一言">学生より</a></li>
-                            <li><a href="#住所・連絡先">コンタクト</a></li>
-                            <li><a href="#進路">進路情報</a></li>
-                        </ul>
-                    </li> -->
                 </ul>
             </div>
         </div>
     </div>
 
     <div class="container">
-        <!-- <div id="setubi" class="container_equipment">
-            <h2>設備紹介</h2>
-            <div class="equipment_wrapper">
-                <div class="equipment">
-                    <img src="img/lab.jpg" alt="設備画像">
-                    <div class="equipment_content">
-                        <h1>学生部屋</h1>
-                        <p>当研究室のB4～M2学生がこちらの部屋で過ごします。</p>
-                    </div>
-                </div>
-                <div class="equipment">
-                    <img src="img/semiroom.jpg" alt="設備画像">
-                    <div class="equipment_content">
-                        <h1>ゼミ部屋</h1>
-                        <p>こちらの部屋で週に一回程度ゼミを行います。ゼミでは研究の進捗報告や意見交換を行います。</p>
-                    </div>
-                </div>
-                <div class="equipment">
-                    <img src="Photos/Anshitsu.jpg" alt="設備画像">
-                    <div class="equipment_content">
-                        <h1>暗室</h1>
-                        <p>夜間における路上障害物の視認性に関する実験が行われます。低位置照明の導入への活用が期待されます。</p>
-                    </div>
-                </div>
-                <div class="equipment">
-                    <img src="img/bbq.jpg" alt="設備画像">
-                    <div class="equipment_content">
-                        <h1>BBQコンロ</h1>
-                        <p>新入生歓迎会などジンパが行われる際に活躍します。研究室の必須アイテムですね。</p>
-                    </div>
-                </div>
-                <div class="equipment">
-                    <img src="Photos/ジオラマ.jpg" alt="設備画像">
-                    <div class="equipment_content">
-                        <h1>吹雪環境ジオラマ</h1>
-                        <p>吹雪とそれに伴う視界不良のシミュレーションを行うジオラマです。</p>
-                    </div>
-                </div>
-                <div class="equipment">
-                    <img src="Photos/IMG_9159.jpg" alt="設備画像">
-                    <div class="equipment_content">
-                        <h1>学生用PC</h1>
-                        <p>学生にはデスクトップPCを1つ、モニターを2つずつ与えられます。</p>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
         <div id="member" class="container_member">
             <h3>Member</h3>
             
@@ -126,6 +95,7 @@
                             <h1>吉井稔雄</h1>
                             <p>教授</p>
                             <a href="https://researchmap.jp/yoshii_toshio">ResearchMap</a>
+
                         </div>
                     </div>
                     <div class="member">
@@ -134,6 +104,7 @@
                             <h1>高橋翔</h1>
                             <p>准教授</p>
                             <a href="https://researchmap.jp/shoT">ResearchMap</a>
+
                         </div>
                     </div>
                     <div class="member">
@@ -142,218 +113,174 @@
                             <h1>八木雅大</h1>
                             <p>特任助教</p>
                             <a href="https://nrid.nii.ac.jp/ja/nrid/1000011003608">KAKEN</a>
+
                         </div>
                     </div>
-                     
                 </div>
             </div>
-
             <div class="students">
                 <h2>学生</h2>
-                <div class="student_wrapper">
-                    <div class="member">
-                        <img src="Photos/MasatakeI.png" alt="メンバー画像">
-                        <div class="member_content">
-                            <h1>石附将武</h1>
-                            <p>D2</p>
+                <div class="grade_section">
+                    <h3>博士課程</h3>
+                    <div class="student_wrapper">
+                    <div class="student_item">
+                        <div class="student_content">
+                            <h3>石附将武</h3>
+                            <p class="comment">研究に真剣に取り組んでいます</p>
                         </div>
                     </div>
-                    <div class="member">
-                        <img src="Photos/ChinamiF.png" alt="メンバー画像">
-                        <div class="member_content">
-                            <h1>福井千奈美</h1>
-                            <p>D2</p>
+                    <div class="student_item">
+                        <div class="student_content">
+                            <h3>福井千奈美</h3>
+                            <p class="comment">新しい発見を目指して頑張っています</p>
                         </div>
                     </div>
-                    <div class="member">
-                        <img src="Photos/ChangW.jpg" alt="メンバー画像">
-                        <div class="member_content">
-                            <h1>Wang Chang</h1>
-                            <p>D2</p>
+                    <div class="student_item">
+                        <div class="student_content">
+                            <h3>Wang Chang</h3>
+                            <p class="comment">国際的な視点で研究を進めています</p>
                         </div>
                     </div>
-                    <div class="member">
-                        <img src="Photos/Abe.jpg" alt="メンバー画像">
-                        <div class="member_content">
-                            <h1>阿部一輝</h1>
-                            <p>M2</p>
+                    </div>
+                </div>
+                <div class="grade_section">
+                    <h3>修士課程 2年</h3>
+                    <div class="student_wrapper">
+                    <div class="student_item">
+                        <div class="student_content">
+                            <h3>阿部一輝</h3>
+                            <p class="comment">卒業研究に全力で取り組んでいます</p>
                         </div>
                     </div>
-                    <div class="member">
-                        <img src="Photos/AkiS.jpg" alt="メンバー画像">
-                        <div class="member_content">
-                            <h1>繁澤朗</h1>
-                            <p>M2</p>
+                    <div class="student_item">
+                        <div class="student_content">
+                            <h3>繁澤朗</h3>
+                            <p class="comment">実用的な研究を心がけています</p>
                         </div>
                     </div>
-                    <div class="member">
-                        <img src="Photos/Tajima.jpg" alt="メンバー画像">
-                        <div class="member_content">
-                            <h1>田嶋亮</h1>
-                            <p>M2</p>
+                    <div class="student_item">
+                        <div class="student_content">
+                            <h3>田嶋亮</h3>
+                            <p class="comment">チームワークを大切にしています</p>
                         </div>
                     </div>
-                    <div class="member">
-                        <img src="Photos/KazukiT.jpg" alt="メンバー画像">
-                        <div class="member_content">
-                            <h1>塚越一輝</h1>
-                            <p>M2</p>
+                    <div class="student_item">
+                        <div class="student_content">
+                            <h3>塚越一輝</h3>
+                            <p class="comment">新しい技術に挑戦しています</p>
                         </div>
                     </div>
-                    <div class="member">
-                        <img src="Photos/KoseiD.jpg" alt="メンバー画像">
-                        <div class="member_content">
-                            <h1>土井康正</h1>
-                            <p>M2</p>
+                    <div class="student_item">
+                        <div class="student_content">
+                            <h3>土井康正</h3>
+                            <p class="comment">社会に貢献する研究を目指しています</p>
                         </div>
                     </div>
-                    <div class="member">
-                        <img src="Photos/KentaM.jpg" alt="メンバー画像">
-                        <div class="member_content">
-                            <h1>本坂健太</h1>
-                            <p>M2</p>
+                    <div class="student_item">
+                        <div class="student_content">
+                            <h3>本坂健太</h3>
+                            <p class="comment">継続的な学習を心がけています</p>
                         </div>
                     </div>
-                    <div class="member">
-                        <img src="Photos/Arai.jpg" alt="メンバー画像">
-                        <div class="member_content">
-                            <h1>荒井智貴</h1>
-                            <p>M1</p>
-                        </div>
-                    </div>                 
-                    <div class="member">
-                        <img src="Photos/ShoichiroI.png" alt="メンバー画像">
-                        <div class="member_content">
-                            <h1>井本翔一朗</h1>
-                            <p>M1</p>
+                    </div>
+                </div>
+                <div class="grade_section">
+                    <h3>修士課程 1年</h3>
+                    <div class="student_wrapper">
+                    <div class="student_item">
+                        <div class="student_content">
+                            <h3>荒井智貴</h3>
+                            <p class="comment">基礎を固めながら研究を進めています</p>
                         </div>
                     </div>
-                    <div class="member">
-                        <img src="Photos/YukiK.jpg" alt="メンバー画像">
-                        <div class="member_content">
-                            <h1>北橋優起</h1>
-                            <p>M1</p>
+                    <div class="student_item">
+                        <div class="student_content">
+                            <h3>井本翔一朗</h3>
+                            <p class="comment">積極的に学んでいます</p>
                         </div>
                     </div>
-                    <div class="member">
-                        <img src="Photos/AyumuK.jpg" alt="メンバー画像">
-                        <div class="member_content">
-                            <h1>駒崎歩</h1>
-                            <p>M1</p>
+                    <div class="student_item">
+                        <div class="student_content">
+                            <h3>北橋優起</h3>
+                            <p class="comment">新しい分野に挑戦しています</p>
                         </div>
                     </div>
-                    <div class="member">
-                        <img src="Photos/ShuseiM.jpg" alt="メンバー画像">
-                        <div class="member_content">
-                            <h1>前田周星</h1>
-                            <p>M1</p>
+                    <div class="student_item">
+                        <div class="student_content">
+                            <h3>駒崎歩</h3>
+                            <p class="comment">チームメンバーと協力して頑張っています</p>
                         </div>
                     </div>
-                    <div class="member">
-                        <img src="Photos/MegumiY.jpg" alt="メンバー画像">
-                        <div class="member_content">
-                            <h1>山田愛</h1>
-                            <p>M1</p>
+                    <div class="student_item">
+                        <div class="student_content">
+                            <h3>前田周星</h3>
+                            <p class="comment">実践的な研究を心がけています</p>
                         </div>
                     </div>
-                    <div class="member">
-                        <img src="Photos/JunnaY.jpg" alt="メンバー画像">
-                        <div class="member_content">
-                            <h1>山根潤奈</h1>
-                            <p>M1</p>
+                    <div class="student_item">
+                        <div class="student_content">
+                            <h3>山田愛</h3>
+                            <p class="comment">多角的な視点で研究に取り組んでいます</p>
                         </div>
                     </div>
-                    <div class="member">
-                        <img src="Photos/Ikeda.jpg" alt="メンバー画像">
-                        <div class="member_content">
-                            <h1>池田旭希</h1>
-                            <p>B4</p>
+                    <div class="student_item">
+                        <div class="student_content">
+                            <h3>山根潤奈</h3>
+                            <p class="comment">継続的な改善を心がけています</p>
                         </div>
                     </div>
-                    <div class="member">
-                        <img src="Photos/Onaga.jpg" alt="メンバー画像">
-                        <div class="member_content">
-                            <h1>翁長志帆</h1>
-                            <p>B4</p>
+                    </div>
+                </div>
+                <div class="grade_section">
+                    <h3>学部生 4年</h3>
+                    <div class="student_wrapper">
+                    <div class="student_item">
+                        <div class="student_content">
+                            <h3>池田旭希</h3>
+                            <p class="comment">卒業研究に向けて準備を進めています</p>
                         </div>
                     </div>
-                    <div class="member">
-                        <img src="Photos/Kobayasi.jpg" alt="メンバー画像">
-                        <div class="member_content">
-                            <h1>小林巧</h1>
-                            <p>B4</p>
+                    <div class="student_item">
+                        <div class="student_content">
+                            <h3>翁長志帆</h3>
+                            <p class="comment">基礎知識をしっかりと身につけています</p>
                         </div>
                     </div>
-                    <div class="member">
-                        <img src="Photos/Kurogou.jpg" alt="メンバー画像">
-                        <div class="member_content">
-                            <h1>黒郷渓育</h1>
-                            <p>B4</p>
+                    <div class="student_item">
+                        <div class="student_content">
+                            <h3>小林巧</h3>
+                            <p class="comment">新しい技術を積極的に学んでいます</p>
                         </div>
                     </div>
-                    <div class="member">
-                        <img src="Photos/Taira.jpg" alt="メンバー画像">
-                        <div class="member_content">
-                            <h1>平良壮大</h1>
-                            <p>B4</p>
+                    <div class="student_item">
+                        <div class="student_content">
+                            <h3>黒郷渓育</h3>
+                            <p class="comment">チームワークを大切にしています</p>
                         </div>
                     </div>
-
-                    <div class="member">
-                        <img src="Photos/Nisikawa.jpg" alt="メンバー画像">
-                        <div class="member_content">
-                            <h1>西川拓志</h1>
-                            <p>B4</p>
+                    <div class="student_item">
+                        <div class="student_content">
+                            <h3>平良壮大</h3>
+                            <p class="comment">実践的なスキルを身につけています</p>
                         </div>
                     </div>
-                    <div class="member">
-                        <img src="Photos/YutoY.jpg" alt="メンバー画像">
-                        <div class="member_content">
-                            <h1>吉田優斗</h1>
-                            <p>B4</p>
+                    <div class="student_item">
+                        <div class="student_content">
+                            <h3>西川拓志</h3>
+                            <p class="comment">継続的な学習を心がけています</p>
                         </div>
+                    </div>
+                    <div class="student_item">
+                        <div class="student_content">
+                            <h3>吉田優斗</h3>
+                            <p class="comment">積極的に研究室活動に参加しています</p>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-    <!-- <div id="gazou" class="gallery">
-        <h1>ギャラリー</h1>
-
-
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="img/baseball.jpg" alt="ギャラリー">
-                </div>
-                <div class="swiper-slide">
-                    <img src="img/semiroom.jpg" alt="ギャラリー">
-                </div>    
-                <div class="swiper-slide">
-                    <img src="img/bbq.jpg" alt="ギャラリー">
-                </div>
-                <div class="swiper-slide">
-                    <img src="img/lab.jpg" alt="ギャラリー">
-                </div>
-                <div class="swiper-slide">
-                    <img src="img/member.jpg" alt="ギャラリー">
-                </div>
-                <div class="swiper-slide">
-                    <img src="img/hokkaido.jpg" alt="ギャラリー">
-                </div>
-            </div>
-
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>                 
-        </div>            
-
-        </div>
-    </div> -->
-
-    
 <footer>
     <div class="logo_address">
         <div class="logo_footer">
@@ -369,9 +296,6 @@
         <p></p>
     </div>
 </footer> 
-    
-
-
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
@@ -432,5 +356,3 @@
 </body>
 
 </html>
-
-
