@@ -40,17 +40,17 @@
         {
           "name": "石附将武",
           "grade": "D2",
-          "comment": "研究に真剣に取り組んでいます"
+          "image": "Photos/MasatakeI.png"
         },
         {
           "name": "福井千奈美",
           "grade": "D2",
-          "comment": "新しい発見を目指して頑張っています"
+          "image": "Photos/ChinamiF.png"
         },
         {
           "name": "Wang Chang",
           "grade": "D2",
-          "comment": "国際的な視点で研究を進めています"
+          "image": "Photos/ChangW.jpg"
         }
       ],
       "master": {
@@ -58,69 +58,69 @@
           {
             "name": "阿部一輝",
             "grade": "M2",
-            "comment": "卒業研究に全力で取り組んでいます"
+            "image": "Photos/Abe.jpg"
           },
           {
             "name": "繁澤朗",
             "grade": "M2",
-            "comment": "実用的な研究を心がけています"
+            "image": "Photos/AkiS.jpg"
           },
           {
             "name": "田嶋亮",
             "grade": "M2",
-            "comment": "チームワークを大切にしています"
+            "image": "Photos/Tajima.jpg"
           },
           {
             "name": "塚越一輝",
             "grade": "M2",
-            "comment": "新しい技術に挑戦しています"
+            "image": "Photos/KazukiT.jpg"
           },
           {
             "name": "土井康正",
             "grade": "M2",
-            "comment": "社会に貢献する研究を目指しています"
+            "image": "Photos/KoseiD.jpg"
           },
           {
             "name": "本坂健太",
             "grade": "M2",
-            "comment": "継続的な学習を心がけています"
+            "image": "Photos/KentaM.jpg"
           }
         ],
         "M1": [
           {
             "name": "荒井智貴",
             "grade": "M1",
-            "comment": "基礎を固めながら研究を進めています"
+            "image": "Photos/Arai.jpg"
           },
           {
             "name": "井本翔一朗",
             "grade": "M1",
-            "comment": "積極的に学んでいます"
+            "image": "Photos/ShoichiroI.png"
           },
           {
             "name": "北橋優起",
             "grade": "M1",
-            "comment": "新しい分野に挑戦しています"
+            "image": "Photos/YukiK.jpg"
           },
           {
             "name": "駒崎歩",
             "grade": "M1",
-            "comment": "チームメンバーと協力して頑張っています"
+            "image": "Photos/AyumuK.jpg"
           },
           {
             "name": "前田周星",
             "grade": "M1",
-            "comment": "実践的な研究を心がけています"
+            "image": "Photos/ShuseiM.jpg"
           },
           {
             "name": "山田愛",
             "grade": "M1",
-            "comment": "多角的な視点で研究に取り組んでいます"
+            "image": "Photos/MegumiY.jpg"
           },
           {
             "name": "山根潤奈",
             "grade": "M1",
-            "comment": "継続的な改善を心がけています"
+            "image": "Photos/JunnaY.jpg"
           }
         ]
       },
@@ -128,37 +128,37 @@
         {
           "name": "池田旭希",
           "grade": "B4",
-          "comment": "卒業研究に向けて準備を進めています"
+          "image": "Photos/Ikeda.jpg"
         },
         {
           "name": "翁長志帆",
           "grade": "B4",
-          "comment": "基礎知識をしっかりと身につけています"
+          "image": "Photos/Onaga.jpg"
         },
         {
           "name": "小林巧",
           "grade": "B4",
-          "comment": "新しい技術を積極的に学んでいます"
+          "image": "Photos/Kobayasi.jpg"
         },
         {
           "name": "黒郷渓育",
           "grade": "B4",
-          "comment": "チームワークを大切にしています"
+          "image": "Photos/Kurogou.jpg"
         },
         {
           "name": "平良壮大",
           "grade": "B4",
-          "comment": "実践的なスキルを身につけています"
+          "image": "Photos/Taira.jpg"
         },
         {
           "name": "西川拓志",
           "grade": "B4",
-          "comment": "継続的な学習を心がけています"
+          "image": "Photos/Nisikawa.jpg"
         },
         {
           "name": "吉田優斗",
           "grade": "B4",
-          "comment": "積極的に研究室活動に参加しています"
+          "image": "Photos/YutoY.jpg"
         }
       ]
     }
