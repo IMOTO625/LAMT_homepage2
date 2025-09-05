@@ -1,0 +1,176 @@
+{
+  "members": {
+    "teachers": [
+      {
+        "name": "吉井稔雄",
+        "position": "教授",
+        "image": "Photos/ToshioY.jpg",
+        "links": [
+          {
+            "type": "ResearchMap",
+            "url": "https://researchmap.jp/yoshii_toshio"
+          }
+        ]
+      },
+      {
+        "name": "高橋翔",
+        "position": "准教授",
+        "image": "Photos/ShoT.jpg",
+        "links": [
+          {
+            "type": "ResearchMap",
+            "url": "https://researchmap.jp/shoT"
+          }
+        ]
+      },
+      {
+        "name": "八木雅大",
+        "position": "特任助教",
+        "image": "Photos/MasahiroY.jpg",
+        "links": [
+          {
+            "type": "KAKEN",
+            "url": "https://nrid.nii.ac.jp/ja/nrid/1000011003608"
+          }
+        ]
+      }
+    ],
+    "students": {
+      "doctoral": [
+        {
+          "name": "石附将武",
+          "grade": "D2",
+          "image": "Photos/MasatakeI.png"
+        },
+        {
+          "name": "福井千奈美",
+          "grade": "D2",
+          "image": "Photos/ChinamiF.png"
+        },
+        {
+          "name": "Wang Chang",
+          "grade": "D2",
+          "image": "Photos/ChangW.jpg"
+        }
+      ],
+      "master": {
+        "M2": [
+          {
+            "name": "阿部一輝",
+            "grade": "M2",
+            "image": "Photos/Abe.jpg"
+          },
+          {
+            "name": "繁澤朗",
+            "grade": "M2",
+            "image": "Photos/AkiS.jpg"
+          },
+          {
+            "name": "田嶋亮",
+            "grade": "M2",
+            "image": "Photos/Tajima.jpg"
+          },
+          {
+            "name": "塚越一輝",
+            "grade": "M2",
+            "image": "Photos/KazukiT.jpg"
+          },
+          {
+            "name": "土井康正",
+            "grade": "M2",
+            "image": "Photos/KoseiD.jpg"
+          },
+          {
+            "name": "本坂健太",
+            "grade": "M2",
+            "image": "Photos/KentaM.jpg"
+          }
+        ],
+        "M1": [
+          {
+            "name": "荒井智貴",
+            "grade": "M1",
+            "image": "Photos/Arai.jpg"
+          },
+          {
+            "name": "井本翔一朗",
+            "grade": "M1",
+            "image": "Photos/ShoichiroI.png"
+          },
+          {
+            "name": "北橋優起",
+            "grade": "M1",
+            "image": "Photos/YukiK.jpg"
+          },
+          {
+            "name": "駒崎歩",
+            "grade": "M1",
+            "image": "Photos/AyumuK.jpg"
+          },
+          {
+            "name": "前田周星",
+            "grade": "M1",
+            "image": "Photos/ShuseiM.jpg"
+          },
+          {
+            "name": "山田愛",
+            "grade": "M1",
+            "image": "Photos/MegumiY.jpg"
+          },
+          {
+            "name": "山根潤奈",
+            "grade": "M1",
+            "image": "Photos/JunnaY.jpg"
+          }
+        ]
+      },
+      "bachelor": [
+        {
+          "name": "池田旭希",
+          "grade": "B4",
+          "image": "Photos/Ikeda.jpg"
+        },
+        {
+          "name": "翁長志帆",
+          "grade": "B4",
+          "image": "Photos/Onaga.jpg"
+        },
+        {
+          "name": "小林巧",
+          "grade": "B4",
+          "image": "Photos/Kobayasi.jpg"
+        },
+        {
+          "name": "黒郷渓育",
+          "grade": "B4",
+          "image": "Photos/Kurogou.jpg"
+        },
+        {
+          "name": "平良壮大",
+          "grade": "B4",
+          "image": "Photos/Taira.jpg"
+        },
+        {
+          "name": "西川拓志",
+          "grade": "B4",
+          "image": "Photos/Nisikawa.jpg"
+        },
+        {
+          "name": "吉田優斗",
+          "grade": "B4",
+          "image": "Photos/YutoY.jpg"
+        }
+      ]
+    }
+  },
+  "summary": {
+    "total_teachers": 3,
+    "total_students": 23,
+    "breakdown": {
+      "doctoral": 3,
+      "master_m2": 6,
+      "master_m1": 7,
+      "bachelor_b4": 7
+    }
+  }
+}
