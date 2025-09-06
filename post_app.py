@@ -34,7 +34,7 @@ def save_post():
         target_path = os.path.join(IMAGE_FOLDER, image_name)
         resize_image(image_path, target_path)
         # shutil.copy(image_path, target_path)
-        image_url = '/' + target_path.replace('\\', '/')
+        image_url = target_path.replace('\\', '/')
 
     # JSONファイルに保存
     if os.path.exists(DATA_FILE):
